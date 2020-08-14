@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1212,2176</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1212,1362</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadandProcessReport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="46">
@@ -65,7 +65,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadandProcessReport" sap:VirtualizedContainerService.HintSize="494,1971" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadandProcessReport" sap:VirtualizedContainerService.HintSize="494,1157" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Workitem_DT" />
       <Variable x:TypeArguments="x:String" Name="Workbook_Path" />
@@ -75,30 +75,30 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Download Monthly report and Upload" sap:VirtualizedContainerService.HintSize="452,495" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44d676abcf2cc406985344f6577fc1a0" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Download Monthly Report' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Download Monthly report and Upload" sap:VirtualizedContainerService.HintSize="452,974" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44d676abcf2cc406985344f6577fc1a0" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Download Monthly Report' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Download and report" sap:VirtualizedContainerService.HintSize="418,349" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Download and report" sap:VirtualizedContainerService.HintSize="418,828" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Geneate Workitem excel" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Geneate Workitem excel" sap:VirtualizedContainerService.HintSize="376,630" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="s:String[]" Default="[{&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;}]" Name="Months" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Input TAXID" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_TaxID]">
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Input TAXID" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_TaxID]">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b79eb987-0930-4264-8687-7e03d0035d6a" InformativeScreenshot="63051378a6696d50c2b52112bae55a4c" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Download Monthly Report' /&gt;&lt;webctrl id='vendorTaxID' tag='INPUT' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -116,7 +116,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:TypeInto>
-              <Sequence DisplayName="Input Year" sap:VirtualizedContainerService.HintSize="262,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Input Year" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="in_Year" />
                 </Sequence.Variables>
@@ -185,15 +185,8 @@
                   </ui:Click.Target>
                 </ui:Click>
               </Sequence>
-              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="sd:DataTable">[Workitem_DT]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="sd:DataTable">[Nothing]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Fetch Each Month Data" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Months]">
+              <ui:BuildDataTable DataTable="[Workitem_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName /&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+              <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Fetch Each Month Data" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Months]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -447,7 +440,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
-              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[Workbook_Path]</OutArgument>
                 </Assign.To>
@@ -455,7 +448,7 @@
                   <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory+in_Config.Item("Raw_ReportPath").ToString+"Yearly-Report-"+in_Config.Item("Year").ToString+"-"+in_TaxID+".xlsx")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:WriteRange AddHeaders="True" DataTable="[Workitem_DT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[Workbook_Path]">
+              <ui:WriteRange AddHeaders="True" DataTable="[Workitem_DT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[Workbook_Path]">
                 <ui:WriteRange.StartingCell>
                   <InArgument x:TypeArguments="x:String">
                     <Literal x:TypeArguments="x:String" Value="" />
@@ -469,10 +462,11 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:WriteRange>
             </Sequence>
-            <Sequence DisplayName="Upload" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Go to Upload Page" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_Config.Item(&quot;acme_url&quot;).ToString+&quot;/reports/upload&quot;]" />
@@ -487,7 +481,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Upload Report" sap:VirtualizedContainerService.HintSize="452,1344" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="2dfcf734cb104c92fed7d8f33f0a7d4f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Upload Yearly Report' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Upload Report" sap:VirtualizedContainerService.HintSize="452,51" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="2dfcf734cb104c92fed7d8f33f0a7d4f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Upload Yearly Report' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -743,6 +737,12 @@
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
   </Sequence>
 </Activity>

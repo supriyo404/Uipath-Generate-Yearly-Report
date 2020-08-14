@@ -1,5 +1,5 @@
 {
-  "name": "ClientSecurityHash",
+  "name": "GenerateYearlyReport",
   "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
